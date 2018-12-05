@@ -54,10 +54,10 @@ class Customer extends Model {
             'name' => 'required',
             'address' => 'required',
             'last_name' => 'required', 
-            'phone' => 'nullable|numeric',
-            'cellphone' => 'nullable|numeric',
             'birthday_date' => 'required|date',
-            'identification_number' => 'required|unique:customers,identification_number,' . ($customer ? $customer->id : 'NULL') . ',id,identification_type,' . Input::get('identification_type'),
+            'phone' => 'nullable|numeric|max:9999999999',
+            'cellphone' => 'nullable|numeric|max:9999999999',
+            'identification_number' => 'required|numeric|max:9999999999|unique:customers,identification_number,' . ($customer ? $customer->id : 'NULL') . ',id,identification_type,' . Input::get('identification_type'),
             'identification_type' => 'required|in:CC,CE,CI,PA|unique:customers,identification_type,' . ($customer ? $customer->id : 'NULL') . ',id,identification_number,' . Input::get('identification_number'),
         ];
     }

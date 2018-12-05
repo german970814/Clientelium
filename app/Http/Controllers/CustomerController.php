@@ -19,6 +19,7 @@ class CustomerController extends Controller {
         'required' => 'Este campo es requerido',
         'date' => 'La fecha no es una fecha válida',
         'numeric' => 'El campo debe contener solo números',
+        'max' => 'Este campo no puede superar los 10 caracteres',
         'in' => 'La opción escogida no es una de las disponibles',
         'identification_type.unique' => 'El tipo de identificación ya ha sido usado',
         'identification_number.unique' => 'El número de identificación ya ha sido usado',

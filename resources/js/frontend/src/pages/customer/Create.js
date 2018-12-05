@@ -103,7 +103,7 @@ class CreateClient extends Component {
             <div className="col-md-6">
               <div className={`form-group ${'phone' in this.props.errors ? 'has-error' : ''}`}>
                 <label>Teléfono (opcional)</label>
-                <input onChange={this.onChange} name="phone" type="text" className="form-control border-input" placeholder="Teléfono" value={this.props.customer.phone || ''} />
+                <input onChange={this.onChange} name="phone" type="number" className="form-control border-input" placeholder="Teléfono" value={this.props.customer.phone || ''} />
                 <div>
                   {
                     this.props.errors.phone && this.props.errors.phone.map((error, ind) => {
@@ -116,7 +116,7 @@ class CreateClient extends Component {
             <div className="col-md-6">
               <div className={`form-group ${'cellphone' in this.props.errors ? 'has-error' : ''}`}>
                 <label>Celular (opcional)</label>
-                <input onChange={this.onChange} name="cellphone" type="text" className="form-control border-input" placeholder="Celular" value={this.props.customer.cellphone || ''} />
+                <input onChange={this.onChange} name="cellphone" type="number" className="form-control border-input" placeholder="Celular" value={this.props.customer.cellphone || ''} />
                 <div>
                   {
                     this.props.errors.cellphone && this.props.errors.cellphone.map((error, ind) => {
@@ -150,7 +150,7 @@ class CreateClient extends Component {
             <div className="col-md-4">
               <div className={`form-group ${'identification_number' in this.props.errors ? 'has-error' : ''}`}>
                 <label>N. de identificación</label>
-                <input onChange={this.onChange} name="identification_number" type="text" className="form-control border-input" placeholder="Identificación" value={this.props.customer.identification_number} />
+                <input onChange={this.onChange} name="identification_number" type="number" className="form-control border-input" placeholder="Identificación" value={this.props.customer.identification_number} />
                 <div>
                   {
                     this.props.errors.identification_number && this.props.errors.identification_number.map((error, ind) => {
