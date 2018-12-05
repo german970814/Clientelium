@@ -23,7 +23,7 @@ class Initial extends Migration
             $table->string('name', 255);
             $table->string('address', 255);
             $table->string('last_name', 255);
-            $table->timestamp('birthday_date');
+            $table->timestamp('birthday_date')->default(\DB::raw('CURRENT_TIMESTAMP'));
             $table->integer('phone')->nullable();
             // $table->integer('user_id')->unsigned();  // Relationship to laravel user model
             $table->integer('cellphone')->nullable();
