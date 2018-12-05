@@ -1,15 +1,15 @@
 # Instalación del proyecto
 
-Una vez se haya realizado la clonación del proyecto, se debe configurar la base de datos, para lo cual es necesario tener Postgres en su última versión, el nombre actual de la base de datos que usa el proyecto es `hoteles`.
+Una vez se haya realizado la clonación del proyecto, se debe configurar la base de datos, para lo cual es necesario tener MySQL en su última versión, el nombre actual de la base de datos que usa el proyecto es `clientes`.
 
 Se debe configuara el archivo `.env` que es una copia de el archivo `.env.example` y se modifican las siguientes lineas con las de configuración de la base de datos:
 
 ```
-DB_CONNECTION=pgsql
+DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=5432
-DB_DATABASE=hoteles
-DB_USERNAME=postgres
+DB_DATABASE=clientes
+DB_USERNAME=root
 DB_PASSWORD=
 ```
 

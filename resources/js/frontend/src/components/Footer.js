@@ -17,7 +17,7 @@ export default class extends Component {
               </a>
             </li>
             <li>
-              <a href="https://github.com/german970814/hotelium">
+              <a href="https://github.com/german970814/Clientelium">
                 Repositorio
               </a>
             </li>
