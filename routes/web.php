@@ -14,6 +14,21 @@
 Route::get('/', function () {
     return view('home');
 });
+Route::get('/charts', function () {
+    return view('home');
+});
+Route::get('/customers', function () {
+    return view('home');
+});
+Route::get('/customers/{id}/edit/page={page}', function () {
+    return view('home');
+});
+Route::get('/customers/{id}/edit', function () {
+    return view('home');
+});
+Route::get('/customers/{id}/page={page}', function () {
+    return view('home');
+});
 
 Route::group(['middleware' => 'cors', 'prefix' => 'json'], function () {
     // Customers

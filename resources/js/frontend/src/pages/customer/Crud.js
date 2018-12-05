@@ -149,7 +149,6 @@ class CrudCustomer extends Component {
       let _method = this.state.customer.id ? 'updateCustomer' : 'createCustomer';
 
       APIClient[_method](this.state.customer, this.props.match.params.id).then(response => {
-        console.log(response);
         if (response.code === 400) {
           this.setState({ errors: response.data.errors });
           window.$.notify({

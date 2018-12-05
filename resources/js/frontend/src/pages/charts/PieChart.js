@@ -14,7 +14,6 @@ export default class extends Component {
   }
   componentDidMount() {
     APIClient.getActiveCustomersChart().then(response => {
-      console.log(response);
       if (response.code === 200) {
         this.setState({
           activeCustomers: response.data.active,

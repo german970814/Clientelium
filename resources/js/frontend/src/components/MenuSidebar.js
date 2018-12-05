@@ -2,10 +2,6 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
 
 export default class extends Component {
-  componentDidMount() {
-    console.log(window.history)
-  }
-
   isActive(url) {
     return window.location.pathname.indexOf(url) + 1;
   }

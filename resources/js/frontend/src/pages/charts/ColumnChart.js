@@ -12,7 +12,6 @@ export default class extends Component {
 
   componentDidMount() {
     APIClient.getIdentificationTypeChart().then(response => {
-      console.log(response)
       if (response.code === 200) {
         this.setState({ data: response.data.data });
       }

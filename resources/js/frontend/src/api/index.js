@@ -1,5 +1,5 @@
 
-const SERVER_HOST = 'http://localhost:8000';
+const SERVER_HOST = 'http://45.33.79.73';  // 'http://localhost:8000';
 const _client = window.fetch.bind(window);
 
 function queryString(obj) {
@@ -37,8 +37,6 @@ export default {
     let headers = new Headers();
     headers.append('Content-Type', 'application/json');
 
-    console.log('data', data)
-    console.log(queryString(data));
     return await _client(`${SERVER_HOST}/json/customers?${queryString(data)}`, {
       method: 'GET',
       headers: headers
